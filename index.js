@@ -13,7 +13,7 @@ const api = express();
 api.use(cors());
 api.use(bodyParser.json());
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 // connect to the database
 dao.Connect();
 
