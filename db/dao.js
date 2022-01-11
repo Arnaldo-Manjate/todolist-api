@@ -12,9 +12,9 @@ function Connect() {
   log("[sql] [init] attempting to connect");
 
   conection = mysql.createConnection({
-    host: "localhost",
-    user: "arnaldo",
-    password: "Pass@word1",
+    host: process.env.HOST,
+    user: process.env.UERSNAME,
+    password: process.env.PASSORD,
   });
 
   conection.connect(function (err) {
